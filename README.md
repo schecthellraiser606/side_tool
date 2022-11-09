@@ -6,7 +6,7 @@ sqlmapコマンドのBasic Auth Base64 Request拡張機能コード
 <br/>
 コマンド例
 ```
-sqlmap -r ./req --tamper=./basic_auth.py --ignore-code=401 --level 5 --risk 3
+sqlmap -r ./req --tamper=./sqlmap_basic_auth.py --ignore-code=401 --level 5 --risk 3
 ```
 リクエスト例
 ```
