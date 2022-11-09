@@ -9,7 +9,7 @@ sqlmapコマンドのBasic Auth Base64 Request拡張機能コード
 sqlmap -r ./req --tamper=./basic_auth.py --ignore-code=401 --level 5 --risk 3
 ```
 リクエスト例
-```
+```req
 GET http://example.htb/ HTTP/1.1
 Content-Length: 0
 
