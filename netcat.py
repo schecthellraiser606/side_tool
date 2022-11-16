@@ -122,20 +122,20 @@ if __name__ == '__main__':
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=textwrap.dedent('''実行例:
         # 対話型コマンドシェルの起動
-        netcat.py -t 192.168.1.108 -p 5555 -l -c
+        netcat.py -t 10.11.14.13 -p 4444 -l -c
         # ファイルのアップロード
-        netcat.py -t 192.168.1.108 -p 5555 -l -u=mytest.whatisup
+        netcat.py -t 10.11.14.13 -p 4444 -l -u=mytest.whatisup
         # コマンドの実行
-        netcat.py -t 192.168.1.108 -p 5555 -l -e=\"cat /etc/passwd\"
+        netcat.py -t 10.11.14.13 -p 4444 -l -e=\"cat /etc/passwd\"
         # 通信先サーバーの135番ポートに文字列を送信
-        echo 'ABCDEFGHI' | ./netcat.py -t 192.168.1.108 -p 135
+        echo 'ABCDEFGHI' | ./netcat.py -t 10.11.14.13 -p 135
         # サーバーに接続
-        netcat.py -t 192.168.1.108 -p 5555
+        netcat.py -t 10.11.14.13 -p 4444
         '''))
     parser.add_argument('-c', '--command', action='store_true', help='対話型シェルの初期化')
     parser.add_argument('-e', '--execute', help='指定のコマンドの実行')
     parser.add_argument('-l', '--listen', action='store_true', help='通信待受モード')
-    parser.add_argument('-p', '--port', type=int, default=5555, help='ポート番号の指定')
+    parser.add_argument('-p', '--port', type=int, default=4444, help='ポート番号の指定')
     parser.add_argument('-t', '--target', default='10.11.14.13', help='IPアドレスの指定、デフォでHTB用仮想環境')
     parser.add_argument('-u', '--upload', help='ファイルのアップロード')
     args = parser.parse_args()

