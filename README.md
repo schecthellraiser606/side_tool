@@ -22,10 +22,13 @@ websocketのプロトコルを介したsqlmapの実行。プロキシ`localhost:
 <br/>
 コマンド例
 ```
+# websocketインストール
+pip install websocket
+
 # プロキシ起動
 python3 sqlmap_websocket.py
 
-#sqlmap実行
+# sqlmap実行
 sqlmap -u "http://localhost:8081/?id=1" --batch --dbs
 ```
 
