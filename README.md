@@ -23,7 +23,7 @@ websocketのプロトコルを介したsqlmapの実行。プロキシ`localhost:
 コマンド例
 ```
 # websocketインストール
-pip install websocket
+pip install websockets
 
 # プロキシ起動
 python3 sqlmap_websocket.py
