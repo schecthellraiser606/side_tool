@@ -18,7 +18,7 @@ Content-Length: 0
 Authorization: Basic *
 ```
 ## sqlmap_websocket.py
-websocketのプロトコルを介したsqlmapの実行。プロキシ`localhost:8081`を縦てそこからSQLi対象へ送ります。
+websocketのプロトコルを介したsqlmapの実行。プロキシ`localhost:8081`を建て、そこからSQLi対象へwebsocket送ります。
 <br/>
 コマンド例
 ```
