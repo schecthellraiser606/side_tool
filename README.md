@@ -17,6 +17,17 @@ Content-Length: 0
 ...
 Authorization: Basic *
 ```
+## sqlmap_websocket.py
+websocketのプロトコルを介したsqlmapの実行。プロキシ`localhost:8081`を縦てそこからSQLi対象へ送ります。
+<br/>
+コマンド例
+```
+# プロキシ起動
+python3 sqlmap_websocket.py
+
+#sqlmap実行
+sqlmap -u "http://localhost:8081/?id=1" --batch --dbs
+```
 
 ## netcat.py
 Python環境が存在（ほぼある）するターゲットで簡易的に足場を構築するためのもの
