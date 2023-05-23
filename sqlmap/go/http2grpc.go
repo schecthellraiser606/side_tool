@@ -67,6 +67,7 @@ func main() {
 		json.NewEncoder(w).Encode(response)
 	})
 
+	// HTTPサーバーを起動
 	log.Println("HTTP to gRPC proxy server started on", httpPort)
 	log.Fatal(http.ListenAndServe(httpPort, nil))
 }
