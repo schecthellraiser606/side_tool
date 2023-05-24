@@ -32,6 +32,23 @@ python3 sqlmap_websocket.py
 sqlmap -u "http://localhost:8081/?id=1" --batch --dbs
 ```
 
+## http2grpc.go
+gRPCのPort50051のPort向けにgrpcurlコマンドを使ってペイロードを送信するHTTPプロキシツール。
+<br/>
+```
+# grpcurl インストール
+$ go install github.com/fullstorydev/grpcurl/cmd/grpcurl@latest
+
+# go mod整理
+$ go mod init sqlmap/grpc
+$ go mod tidy
+
+# 起動
+$ go run http2grpc.go
+
+# sqlmap実行
+sqlmap -u "http://localhost:8051/?id=1" --batch --dump
+```
 ## netcat.py
 Python環境が存在（ほぼある）するターゲットで簡易的に足場を構築するためのもの
 
