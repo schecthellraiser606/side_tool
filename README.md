@@ -33,8 +33,8 @@ sqlmap -u "http://localhost:8081/?id=1" --batch --dbs
 ```
 
 ## http2grpc.go
-gRPCのPort50051のPort向けにgrpcurlコマンドを使ってペイロードを送信するHTTPプロキシツール。
-<br/>
+gRPCのPort50051向けにgrpcurlコマンドを使ってペイロードを送信するHTTPプロキシツール。HTTPのPortは8051。<br/>
+コマンド例:
 ```
 # grpcurl インストール
 $ go install github.com/fullstorydev/grpcurl/cmd/grpcurl@latest
