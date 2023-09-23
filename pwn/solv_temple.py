@@ -35,3 +35,6 @@ p = conn()
 
 
 p.interactive()
+
+# After Pwned code
+# print(p.recvrepeat().decode())
