@@ -1,5 +1,7 @@
 from pwn import *
 
+context.log_level = "debug"
+
 binfile = './chall'
 offset = b'A'*24
 
