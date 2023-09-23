@@ -16,14 +16,14 @@ b main
 elf = ELF(binfile)
 
 def conn():
-  if args.REMOTE:
-    p = remote(rhost, rport)
-  elif args.GDB:
-    p = process(elf.path)
-    gdb.attach(p, gdbscript=gdb_script)
-  else:
-    p = process(elf.path)
-  return p
+    if args.REMOTE:
+        p = remote(rhost, rport)
+    elif args.GDB:
+        p = process(elf.path)
+        gdb.attach(p, gdbscript=gdb_script)
+    else:
+        p = process(elf.path)
+    return p
 
 p = conn()
 
