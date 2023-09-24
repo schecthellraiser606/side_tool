@@ -34,7 +34,7 @@ p = conn()
 # coding here
 # p.sendline(b'/bin/sh')
 
-
+p.recvrepeat().decode()
 p.interactive()
 
 # After Pwned code
