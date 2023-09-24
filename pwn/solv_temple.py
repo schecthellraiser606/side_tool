@@ -16,6 +16,7 @@ b main
 '''
 
 elf = ELF(binfile)
+context.binary = elf
 
 def conn():
     if args.REMOTE:
