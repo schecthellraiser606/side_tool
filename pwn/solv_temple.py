@@ -3,6 +3,7 @@ from pwn import *
 context.log_level = "debug"
 
 binfile = './chall'
+libcfile = ''
 offset = b'A'*24
 
 rhost = 'rop-2-35.seccon.games'
@@ -17,6 +18,7 @@ b main
 
 elf = ELF(binfile)
 context.binary = elf
+# libc =ELF(libcfile)
 
 def conn():
     if args.REMOTE:
