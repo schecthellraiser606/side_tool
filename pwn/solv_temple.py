@@ -18,7 +18,8 @@ b main
 
 elf = ELF(binfile)
 context.binary = elf
-# libc =ELF(libcfile)
+# libc = ELF(libcfile)
+# libc = elf.libc
 
 def conn():
     if args.REMOTE:
