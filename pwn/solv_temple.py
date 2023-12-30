@@ -1,6 +1,7 @@
 from pwn import *
 
 context.log_level = "debug"
+context.kernel = "amd64"
 
 binfile = './chall'
 libcfile = ''
